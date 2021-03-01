@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Family Web App</title>
+    </head>
+    <body>
+        <h1>MY FAMILY BOOK</h1>
+        <img id="personPic" src="download.jpg">
+        <h3 id="nameText">MY FAMILY</h3>
+        <div>
+            <button type="button" id="button" onclick="nextSlide()">Next</button>
+        </div>
+        
+        
+    </body>
+    <script>
+        var pic = ["Dad pic.jpg", "Mom pic.jpg", "me pic.jpg"];
+        var fammembers = ["Alok Banka(My Dad)", "Reshu Saraogi(My Mom)", "Kshitij Banka(Me)"];
+        var i = 0;
+        function nextSlide() {
+            document.getElementById("nameText").innerHTML=fammembers[i];
+            document.getElementById("personPic").src=pic[i];
+            i++;
+        }
+    </script>
+</html>
